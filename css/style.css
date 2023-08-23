@@ -1,0 +1,120 @@
+.section {
+    height: 100vh;
+    background: url(../images/bg.png);
+}
+
+.section:nth-child(odd) {
+    background: #000;
+}
+
+.inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+#intro {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+#intro h2 {
+    width: 300px;
+}
+
+#intro h2 span {
+    display: inline-block;
+    width: 100px;
+    font-size: 100px;
+    font-weight: 900;
+    text-align: center;
+}
+
+#intro h2 span:nth-child(odd) {
+    background: url(../images/holo.png);
+    color: #000;
+    /* color: transparent; */
+    /* -webkit-background-clip: text; */
+}
+
+#profile {
+    display: flex;
+    align-items: center;
+}
+
+#profile .txt {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+#profile .txt span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 50%;
+    font-weight: 900;
+    transform-origin: center bottom;
+    background: url(../images/holo.png);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#profile .case {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+#profile .case>* {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#profile .img_box {
+    border-radius: 50%;
+    overflow: hidden;
+    border: 30px solid #fff;
+
+}
+
+.logo {
+    position: fixed;
+    top: 80px;
+    left: 80px;
+    z-index: 999;
+    background: #000;
+    color: #fff;
+    padding: 2px;
+}
+
+.gnb {
+    position: fixed;
+    top: 50%;
+    right: 80px;
+    transform: translate(0, -50%);
+    z-index: 999;
+    text-align: right;
+    background: #000;
+    padding: 8px;
+}
+
+.gnb li {
+    background: url(../images/holo.png);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.footer {
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    z-index: 999;
+    background: #000;
+    color: #fff;
+    padding: 2px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스를 움직여요</title>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <style>
+        .test {
+            padding: 200px;
+        }
+
+        .test .box {
+            width: 100px;
+            height: 100px;
+            background: turquoise;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="test">
+        <div class="box">봌수</div>
+    </section>
+
+    <script>
+        // const S = gsap.to('.box', {
+        //     x: 500,
+        //     y: 500,
+        //     duration: 3,
+        //     rotate: 400,
+        //     opacity: 0,
+        //     borderRadius: 100,
+        // })
+        gsap.to('.box', {
+            x: 500,
+            duration: 1,
+        });
+        gsap.to('.box', {
+            x: 0,
+            duration: 1,
+            delay: 1,
+        });
+
+    </script>
+</body>
+
+</html>
